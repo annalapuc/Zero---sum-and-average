@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        System.out.println("Podaj liczbe: ");
+        int a = in.nextInt();
+        int suma = 0;
+        int counter = 0;
+
+        while (a != 0) {
+            suma += a;
+            a = in.nextInt();
+            counter++;
+        }
+
+        if (a == 0) {
+            System.out.println("Suma to: " + suma);
+            int average = suma / counter;
+            System.out.println("Licznik: " + counter + ". A średnia to: " + average);
+
+        }
+
+    }
+}
